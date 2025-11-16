@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FAQ - Scentique</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Scentique</h1>
+   <button onclick="toggleMenu()">☰ Menu</button>
+<div id="sideMenu" class="side-menu">
+  <a href="index.html">Home</a><br>
+  <a href="about.html">About</a><br>
+  <a href="shop.html">Shop</a><br>
+  <a href="contact.html">Contact</a><br>
+  <a href="login.php">Login</a><br />
+  <a href="register.php">Register</a><br />
+  <a href="faq.html">FAQ</a>
+</div>
+
+<button onclick="toggleTheme()">🌗 Toggle Dark Mode</button>
+
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <h3>Do you offer international shipping?</h3>
+    <p>Yes, we ship worldwide!</p>
+
+    <h3>Are your perfumes long-lasting?</h3>
+    <p>Our fragrances are designed to last 6–10 hours depending on the scent family.</p>
+
+    <h3>What is your return policy?</h3>
+    <p>You can return unopened products within 14 days of delivery for a full refund.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Scentique. All rights reserved.
+  </footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("open");
+  }
+
+  function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
+
+</body>
+</html>

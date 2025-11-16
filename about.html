@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us - Scentique</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Scentique</h1>
+ <button onclick="toggleMenu()">☰ Menu</button>
+<div id="sideMenu" class="side-menu">
+  <a href="index.html">Home</a><br>
+  <a href="about.html">About</a><br>
+  <a href="shop.html">Shop</a><br>
+  <a href="contact.html">Contact</a><br>
+  <a href="login.php">Login</a><br />
+  <a href="register.php">Register</a>
+  <a href="faq.html">FAQ</a>
+</div>
+
+<button onclick="toggleTheme()">🌗 Toggle Dark Mode</button>
+  </header>
+
+  <div class="container">
+    <h2>Our Story</h2>
+    <p>Scentique was born from a passion for fine fragrances without the extravagant price tags. We believe everyone deserves to feel luxurious, and that’s why we craft high-quality designer dupes with precision and care.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Scentique. All rights reserved.
+  </footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("open");
+  }
+
+  function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
+
+</body>
+</html>

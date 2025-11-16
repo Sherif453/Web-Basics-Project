@@ -1,0 +1,175 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #fff9f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 28px;
+  color: #b07c56;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #b07c56;
+}
+
+.grid {
+ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f3e7df;
+  color: #777;
+  margin-top: 40px;
+}
+
+.card {
+  height: 370px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.container {
+   max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #b07c56;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a06949;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode a {
+  color: #9dd1ff;
+}
+
+.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #ccc;
+  border-top: 1px solid #333;
+}
+
+.dark-mode .card {
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.side-menu {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  padding: 20px;
+  color: white;
+  z-index: 1000;
+}
+
+.side-menu.open {
+  display: block;
+}
+
+.slideshow-container {
+  text-align: center; /* centers inline/inline-block elements inside */
+  max-width: 600px; /* or any max width you want */
+  margin: 0 auto; /* centers the whole slideshow container horizontally */
+}
+
+.slide {
+  display: none;
+  max-width: 100%;  /* scale down image if bigger than container */
+  height: auto;     /* keep aspect ratio */
+  margin: 0 auto;   /* center each image block */
+  border-radius: 8px; /* optional: rounded corners for nicer look */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  font-size: 14px;
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  width: auto;       
+  max-width: 120px;  
+  white-space: nowrap;
+  transition: background-color 0.3s;
+}
+
+#backToTopBtn:hover {
+  background-color: #333;
+}
+
